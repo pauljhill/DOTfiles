@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Source directory where the original config files are located
-SOURCE="$HOME/~dot-files"
+SOURCE="$HOME/dotfiles"
 
 # Destination directory where symlinks will be created
 DESTINATION="$HOME/.config"

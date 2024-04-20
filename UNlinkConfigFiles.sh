@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Source directory where the original configuration files are located for restoration
-SOURCE="$HOME/D~dot-files"
+SOURCE="$HOME/dotfiles"
 
 # Destination directory where the restored files will go
 DESTINATION="$HOME/.config"
