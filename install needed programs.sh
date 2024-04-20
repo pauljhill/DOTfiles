@@ -1,4 +1,4 @@
-sudo pacman -S --noconfirm bash-completion 
+sudo pacman -S --noconfirm bash-completion github-desktop-bin
 paru -S --noconfirm nwg-displays 
 
 
@@ -13,3 +13,6 @@ sudo echo "10.0.1.2:/mnt/CargoBay/Media $HOME/mnt/Media nfs defaults 0 0" | sudo
 sudo echo "10.0.1.2:/mnt/CargoBay/docker $HOME/mnt/docker nfs defaults 0 0" | sudo tee -a /etc/fstab
 sudo systemctl daemon-reload
 sudo mount -a
+
+
+# test change for git commit 
