@@ -1,4 +1,14 @@
+
 sudo pacman -S --noconfirm bash-completion github-desktop-bin
+
+
+#the following block is for VM's
+#sudo pacman -S --noconfirm virt-viewer virt-manager qemu-base vde2 nftables dnsmasq bridge-utils ovmf swtpm
+#edtables iptables-nft // these are allready on the arco linux instance
+
+
+
+#display manger i like
 paru -S --noconfirm nwg-displays 
 
 
