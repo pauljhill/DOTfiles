@@ -1,0 +1,14 @@
+#!/bin/bash
+
+## Set GTK Themes, Icons, Cursor and Fonts
+
+THEME='Dracula'
+ICONS='Tela-circle-dracula-dark'
+FONT='SymbolsNerdFont-Regular 16'
+CURSOR='Bibata-Modern-Ice'
+
+	gsettings set org.gnome.desktop.interface gtk-theme "$THEME"
+	gsettings set org.gnome.desktop.wm.preferences theme "$THEME"
+	gsettings set org.gnome.desktop.interface icon-theme "$ICONS"
+	gsettings set org.gnome.desktop.interface cursor-theme "$CURSOR"
+	gsettings set org.gnome.desktop.interface font-name "$FONT"

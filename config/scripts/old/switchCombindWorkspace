@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+case "$1" in
+    1)
+        hyprctl dispatch workspace 1
+        hyprctl dispatch workspace 3
+        hyprctl dispatch workspace 2
+        ;;
+    2)
+        hyprctl dispatch workspace 4
+        hyprctl dispatch workspace 6
+        hyprctl dispatch workspace 5
+        ;;
+    3)
+        hyprctl dispatch workspace 7
+        hyprctl dispatch workspace 9
+        hyprctl dispatch workspace 8
+        ;;
+    *)  # Handle unknown option
+        echo "Unknown option: $1"
+        show_help
+        exit 1
+        ;;
+esac
