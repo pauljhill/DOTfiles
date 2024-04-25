@@ -26,16 +26,16 @@
 
 
     "modules-center": [
-       
-    ],
-    "modules-right": [
-        "pulseaudio",
-        "temperature",
-        "battery",
-        "tray",
-        "network",
         "clock#date",
         "clock#time"
+    ],
+    "modules-right": [
+        "custom/wlogout",
+        "temperature",
+        "battery",
+      //  "network",
+        "tray",
+        "pulseaudio",
     ],
 
 
@@ -164,8 +164,13 @@
         "spacing": 5
     },
     "custom/menu": {
-        "format": "  ",
+        "format": " 󰣇 ",
         "tooltip": false,
         "on-click": "nwg-drawer",
       },
+    "custom/wlogout": {
+        "format": " ⏻ ",
+        "tooltip": false,
+        "on-click": "wlogout",
+      },      
 }

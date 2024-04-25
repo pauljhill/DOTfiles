@@ -22,3 +22,5 @@ for item in "$SOURCE_DIR"/*; do
 done
 
 echo "Symlinks created successfully."
+sleep 2 
+exit

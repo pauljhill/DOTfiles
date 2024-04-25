@@ -48,7 +48,7 @@ cd ~
 
 # apps needed 
 paru -S --noconfirm alacritty nwg-displays nwg-drawer nwg-look nwg-clipman swaync pacseek swappy brave-bin waybar thunar 
-paru -S --noconfirm snapper-gui wpgtk
+paru -S --noconfirm snapper-gui wlogout wayland-logout 
  # apps i like 
 paru -S --noconfirm github-desktop-bin 
 #themes 
@@ -76,7 +76,7 @@ duf
 # fix thunar openterm 
 # get themes working eith mod R
 # get snapper grub working 
-# waybar things i want in it clock audio system data network app start button idleswitch power button 
+# waybar things i want in it ----- > todo   idleswitch power button screenshot
 # 3 diffrent bars depending on screen 
 
 
