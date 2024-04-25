@@ -10,7 +10,7 @@
     // -------------------------------------------------------------------------
     // Global configuration
     // -------------------------------------------------------------------------
-
+    //"outpuut": "DP-7"
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "margin": "0 0 0 0",
@@ -28,6 +28,7 @@
        
     ],
     "modules-right": [
+        "pulseaudio",
         "temperature",
         "battery",
         "tray",
@@ -82,15 +83,6 @@
         }
     },
 
-    "custom/keyboard-layout": {
-      "exec": "hyprlandmsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4",
-      // Interval set only as a fallback, as the value is updated by signal
-      "interval": 30,
-      "format": "  {}", // Icon: keyboard
-      // Signal sent by hyprland key binding (~/.config/hyprland/key-bindings)
-      "signal": 1, // SIGHUP
-      "tooltip": false
-    },
 
     "memory": {
         "interval": 5,
@@ -103,8 +95,8 @@
 
     "network": {
         "interval": 5,
-        "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
-        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
+        "format-wifi": "  {essid} {ipaddr} ({signalStrength}%)", // Icon: wifi
+        "format-ethernet": " {ipaddr}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}"
     },
@@ -135,22 +127,22 @@
         }
     },
 
-    //"pulseaudio": {
-    //    //"scroll-step": 1,
-    //    "format": "{icon}  {volume}%",
-    //    "format-bluetooth": "{icon}  {volume}%",
-    //    "format-muted": "",
-    //    "format-icons": {
-    //        "headphones": "",
-    //        "handsfree": "",
-    //        "headset": "",
-    //        "phone": "",
-    //        "portable": "",
-    //        "car": "",
-    //        "default": ["", ""]
-    //    },
-    //    "on-click": "pavucontrol"
-    //},
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{icon}  {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
+    },
 
     "temperature": {
       "critical-threshold": 80,
