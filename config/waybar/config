@@ -19,6 +19,7 @@
     "spacing":0,
 
     "modules-left": [
+        "custom/menu",
         "hyprland/workspaces",
         "hyprland/mode"
     ],    
@@ -162,5 +163,9 @@
         "icon-size": 20,
         "spacing": 5
     },
-
+    "custom/menu": {
+        "format": "  ",
+        "tooltip": false,
+        "on-click": "nwg-drawer",
+      },
 }
