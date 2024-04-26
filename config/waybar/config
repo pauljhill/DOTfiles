@@ -12,7 +12,7 @@
     // -------------------------------------------------------------------------
     //"outpuut": "DP-7"
     "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
+    "position": "bottom", // Waybar position (top|bottom|left|right)
     "margin": "0 0 0 0",
     // If height property would be not present, it'd be calculated dynamically
     //"height": 30,
@@ -20,22 +20,22 @@
 
     "modules-left": [
         "custom/menu",
+        "custom/wlogout",
         "hyprland/workspaces",
         "hyprland/mode"
     ],    
 
 
     "modules-center": [
-        "clock#date",
-        "clock#time"
+        "clock#date"
     ],
     "modules-right": [
-        "custom/wlogout",
         "temperature",
         "battery",
       //  "network",
         "tray",
         "pulseaudio",
+        "clock#time",
     ],
 
 

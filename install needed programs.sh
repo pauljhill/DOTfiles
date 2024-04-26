@@ -2,8 +2,7 @@
 
 sudo pacman -S --noconfirm --needed base-devel git nm-connection-editor networkmanger network-mananger-applet 
 sudo pacman -S --noconfirm --needed  bash-completion xdg-utils samba nfs-utils micro code rofi swww nerd-fonts-git
-sudo pacman -S --noconfirm --needed  gparted vlc ark signal-desktop curl qt5ct qt5-wayland xfce4-terminal
-sudo pacman -S --noconfirm --needed  xdg-desktop-portal-hyprland udiskie gvfs-nfs gvfs-smb duf
+sudo pacman -S --noconfirm --needed  gparted vlc ark signal-desktop curl qt5ct qt5-wayland xfce4-terminal ristretto
 sudo pacman -S --noconfirm --needed  ttf-nerd-fonts-symbols pavucontrol python-pywal
 
 #------------snapper-------
