@@ -12,7 +12,8 @@
     // -------------------------------------------------------------------------
     //"outpuut": "DP-7"
     "layer": "top", // Waybar at top layer
-    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "output": "Microstep MAG321CURV DA2A070A00101",
+    "position": "top", // Waybar position (top|bottom|left|right)
     "margin": "0 0 0 0",
     // If height property would be not present, it'd be calculated dynamically
     //"height": 30,
