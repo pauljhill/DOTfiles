@@ -1,12 +1,12 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm --needed base-devel git nm-connection-editor networkmanger network-mananger-applet 
-sudo pacman -S --noconfirm --needed  bash-completion xdg-utils samba nfs-utils micro code rofi swww nerd-fonts-git
-sudo pacman -S --noconfirm --needed  gparted vlc ark signal-desktop curl qt5ct qt5-wayland xfce4-terminal ristretto
-sudo pacman -S --noconfirm --needed  ttf-nerd-fonts-symbols pavucontrol python-pywal
+sudo pacman -S  --needed base-devel git nm-connection-editor networkmanger network-mananger-applet 
+sudo pacman -S  --needed  bash-completion xdg-utils samba nfs-utils micro code rofi swww nerd-fonts-git
+sudo pacman -S  --needed  gparted vlc ark signal-desktop curl qt5ct qt5-wayland xfce4-terminal ristretto
+sudo pacman -S  --needed  ttf-nerd-fonts-symbols pavucontrol python-pywal udiskie
 
 #------------snapper-------
-sudo pacman -S --noconfirm --needed  snapper snap-pac grub-btrfs 
+sudo pacman -S  --needed  snapper snap-pac grub-btrfs 
 sudo umount /.snapshots
 sudo rm -r /.snapshots
 sudo snapper -c root create-config /
@@ -46,12 +46,12 @@ cd ~
 
 
 # apps needed 
-paru -S --noconfirm alacritty nwg-displays nwg-drawer nwg-look nwg-clipman swaync pacseek swappy brave-bin waybar thunar 
-paru -S --noconfirm snapper-gui wlogout wayland-logout 
+paru -S  alacritty nwg-displays nwg-drawer nwg-look nwg-clipman swaync pacseek swappy brave-bin waybar thunar 
+paru -S  snapper-gui wlogout wayland-logout 
  # apps i like 
-paru -S --noconfirm github-desktop-bin 
+paru -S  github-desktop-bin 
 #themes 
-paru -S --noconfirm sddm-slice-git xcursor-breeze sweet-gtk-theme dracula-gtk-theme	tela-circle-icon-theme-dracula
+paru -S  sddm-slice-git xcursor-breeze sweet-gtk-theme dracula-gtk-theme	tela-circle-icon-theme-dracula
 
 
 
