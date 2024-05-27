@@ -24,6 +24,19 @@ systemctl enable --now libvirtd
 systemctl start libvirtd
 
 
+cd /home/tech/git
+git clone https://github.com/HikariKnight/quickpassthrough.git
+cd quickpassthrough
+go mod download
+CGO_ENABLED=0 go build -ldflags="-X github.com/HikariKnight/quickpassthrough/internal/version.Version=$(git rev-parse --short HEAD)" -o quickpassthrough cmd/main.go
+
+
+echo "GRUB_CMDLINE_LINUX=\"iommu=pt intel_iommu=on\"" >> /etc/default/grub
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+echo "REBOOT NOW"
+
 #this script is trying do do the following
 
 # newgrp libvirt

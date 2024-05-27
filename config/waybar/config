@@ -28,7 +28,7 @@
 
 
     "modules-center": [
-        "clock#date"
+        "clock#date"        
     ],
     "modules-right": [
         "temperature",
@@ -114,11 +114,11 @@
     },
 
     "hyprland/workspaces": {
-        "all-outputs": false,
-        "disable-scroll": true,
+        "all-outputs": true,
+        "disable-scroll": false,
         "format": "{icon} {name}",
         "format-icons": {
-            "1:www": "龜", // Icon: firefox-browser
+            "1:www": "w龜", // Icon: firefox-browser
             "2:mail": "", // Icon: mail
             "3:editor": "", // Icon: code
             "4:terminals": "", // Icon: terminal
